@@ -5,16 +5,16 @@
 class Tfswitch < Formula
   desc "The tfswitch command lets you switch between terraform versions."
   homepage "https://versus.github.io/terraform-switcher"
-  version "0.21.1"
+  version "0.21.4"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/versus/terraform-switcher/releases/download/0.21.1/terraform-switcher_0.21.1_darwin_amd64.tar.gz"
-    sha256 "4104661731374fd2ac3e1f5e5f2006c9fed9e557a93e54c49346a2bb0aac8ebb"
+    url "https://github.com/versus/terraform-switcher/releases/download/0.21.4/terraform-switcher_0.21.4_darwin_amd64.tar.gz"
+    sha256 "b0c4cb866891a6520af3a82bdf673e5338c4fa06688c3ae91cbdc989bfef9c6c"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/versus/terraform-switcher/releases/download/0.21.1/terraform-switcher_0.21.1_linux_amd64.tar.gz"
-    sha256 "39996451a48818377fa661b3f35c6365a4d6053f04704ba49eaa202a7e04cc16"
+    url "https://github.com/versus/terraform-switcher/releases/download/0.21.4/terraform-switcher_0.21.4_linux_amd64.tar.gz"
+    sha256 "63c8d9401a4e4b5ad672f57627b4eb524e763bc6520ad46eb202ab6ff17be22b"
   end
 
   conflicts_with "terraform"
