@@ -7,20 +7,20 @@ class Sculptor < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/sequring/sculptor/releases/download/v#{version}/sculptor_#{version}_darwin_amd64.tar.gz"
-      sha256 "01548c279c748c0379a1bc2f4e824ebbd5940026e6cd43632f7a94379a544605"
+      sha256 "9f79bb2333feb58f18c6ef597406beec3bf58c290f96a573baddf4f7fd6d86e3"
     elsif Hardware::CPU.arm?
       url "https://github.com/sequring/sculptor/releases/download/v#{version}/sculptor_#{version}_darwin_arm64.tar.gz"
-      sha256 "f07a001a18c66e4a2d1d07b4618e7e224e23c0269f8c6b5ccb483c6dd4c442cf"
+      sha256 "187abde35c5017f88bed639013acf851d9efb08ff9787ba81c8bbbf018e0eaef"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/sequring/sculptor/releases/download/v#{version}/sculptor_#{version}_linux_amd64.tar.gz"
-      sha256 "896680a65345b597b87834571cae7464e815617a23c0c99a464c20d743a18e00"
+      sha256 "c7564de19cbc0ab2d63a116b5672eb66a56cc82a6a782bdddbda2e1a8be79645"
     elsif Hardware::CPU.arm?
       url "https://github.com/sequring/sculptor/releases/download/v#{version}/sculptor_#{version}_linux_arm64.tar.gz"
-      sha256 "f52ac812c776df911964f4344d5c8088198f828a113919e13d967d3cc8f5379b"
+      sha256 "04513daeb710e6f20753ce79b65b90b92866e6a589ddc605aae38f3fc327ba04"
     end
   end
 
