@@ -11,7 +11,7 @@ class Sculptor < Formula
       sha256 "9f79bb2333feb58f18c6ef597406beec3bf58c290f96a573baddf4f7fd6d86e3"
     elsif Hardware::CPU.arm?
       url "https://github.com/sequring/sculptor/releases/download/v#{version}/sculptor_#{version}_darwin_arm64.tar.gz"
-      sha256 "f07a001a18c66e4a2d1d07b4618e7e224e23c0269f8c6b5ccb483c6dd4c442cf"
+      sha256 "187abde35c5017f88bed639013acf851d9efb08ff9787ba81c8bbbf018e0eaef"
     end
   end
 
