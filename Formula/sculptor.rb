@@ -1,8 +1,9 @@
+# sculptor.rb
 class Sculptor < Formula
   desc "Tool to help you generate CloudFormation templates from AWS CDK constructs"
   homepage "https://github.com/sequring/sculptor"
   version "0.8.2"
-  license "MIT"
+  license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
@@ -26,6 +27,9 @@ class Sculptor < Formula
 
   def install
     bin.install "sculptor"
+    bash_completion.install "completions/sculptor.bash" => "sculptor"
+    zsh_completion.install "completions/sculptor.zsh" => "_sculptor"
+    fish_completion.install "completions/sculptor.fish"
     prefix.install "LICENSE"
   end
 
