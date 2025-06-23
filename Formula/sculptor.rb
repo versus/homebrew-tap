@@ -27,9 +27,6 @@ class Sculptor < Formula
 
   def install
     bin.install "sculptor"
-    bash_completion.install "completions/sculptor.bash" => "sculptor"
-    zsh_completion.install "completions/sculptor.zsh" => "_sculptor"
-    fish_completion.install "completions/sculptor.fish"
     prefix.install "LICENSE"
   end
 
