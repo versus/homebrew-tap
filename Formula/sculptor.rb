@@ -2,26 +2,26 @@
 class Sculptor < Formula
   desc "Tool to help you generate CloudFormation templates from AWS CDK constructs"
   homepage "https://github.com/sequring/sculptor"
-  version "0.8.7"
+  version "0.8.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/sequring/sculptor/releases/download/v#{version}/sculptor_#{version}_darwin_amd64.tar.gz"
-      sha256 "8038f1f6ddbc6fde452f0b62853fd54958cee291e0204befb6032281ea718b95"
+      sha256 "9bc4c072b8853e8b65468cedea779e4d629452538dd6c152a9eb09fd9fd96cef" # darwin amd64
     elsif Hardware::CPU.arm?
       url "https://github.com/sequring/sculptor/releases/download/v#{version}/sculptor_#{version}_darwin_arm64.tar.gz"
-      sha256 "936ae2bdcabe32baa406f008d61093d64ba2814ebca7e2a4a04c87db1a885a3c"
+      sha256 "c99c9f2ebf562d82b4ce4fdd07c67c11a1b8523689906e86b759f9defd0da3a4" # darwin arm64
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/sequring/sculptor/releases/download/v#{version}/sculptor_#{version}_linux_amd64.tar.gz"
-      sha256 "57990c1b41561b8b5cc1dc0a0fcd087becef989d7840980d7dda12a888873437"
+      sha256 "82b59bb063d258b37bd4e2124078b8f5412d3d111cd47820b967aca24644c2ae" # linux amd64
     elsif Hardware::CPU.arm?
       url "https://github.com/sequring/sculptor/releases/download/v#{version}/sculptor_#{version}_linux_arm64.tar.gz"
-      sha256 "1ce6c33d459e6215f5d22c32ad2fe5bf7a338ce854d2e010a1b3771773c66c5d"
+      sha256 "546bbc16a32a3079095a526345ba12854098316f927c174ef2a4f03f21ed0ecf" # linux arm64
     end
   end
 
